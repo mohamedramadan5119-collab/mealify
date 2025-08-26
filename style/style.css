@@ -1,0 +1,719 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+    
+}
+
+
+
+
+.leyar{
+    margin: 0;
+    padding: 0;
+    background-color: #EEEEEE ;
+    width: 100%;
+    height: 100vh;
+    
+}
+.navbar{
+    background-color: white;
+    box-shadow:  3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo h1 a{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+    color: #111;
+}
+
+.links ul{
+    list-style: none;
+}
+.links ul li .link-slide{
+    text-decoration: none;
+    color: #7F7F97;
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+
+.links ul li:hover a{
+    color: #000000;
+}
+
+
+.link-slide {
+    position: relative;
+    text-decoration: none;
+    color: #111;
+    font: 600 20px;
+}
+
+
+
+.link-slide::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;         
+    width: 0;
+    height: 2px;          
+    background-color: red;
+    transition: width 0.8s ease;
+}
+
+
+.link-slide:hover{
+    color: red;
+}
+.link-slide:hover::after {
+    width: 100%;
+    
+}
+
+.navicon a .fa-moon{
+    font-size: 29px;
+    padding: 10px;
+    color: #111;
+}
+
+
+.image1{
+    width: 100%;
+}
+
+.image1 img{
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.coption1{
+    text-align: center;
+}
+
+.coption1 h2{
+    margin: 0;
+    font-size: 65px;
+    font-weight: 700;
+    color: rgb(55, 55, 63);
+    font-family: "Amatic SC", sans-serif;
+}
+.coption1 p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(79, 79, 90);
+}
+
+.btn-groub{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+}
+
+.btn-groub a{
+    padding: 0 25px;
+    text-decoration: none;
+
+}
+
+.btn-groub .book{
+    background-color: #CE1212;
+    color: white;
+    border-radius: 40px;
+    justify-content: center;
+    align-content: center;
+    transition: 0.5s;
+}
+
+.book:hover{
+    background-color: rgb(228, 8, 8);
+}
+
+.btn-groub .icon{
+    padding: 10px 25px;
+}
+
+.fa-play{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    color: #212529 ;
+    border-left: 10px solid red;
+    transition: 0.5s;
+
+}
+
+.icon{
+    transition: 0.5s;
+}
+.fa-play:hover{
+    color: rgb(228, 8, 8);
+}
+
+.icon:hover {
+    color: rgb(228, 8, 8);
+}
+
+.title-chefs{
+    text-align: center;
+}
+
+.title-chefs h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(127, 127, 144);
+}
+
+
+.title-chefs span{
+    font-size: 50px;
+    font-weight: 400 ;
+    color: rgb(206, 18, 18);
+    font-family: "Amatic SC", sans-serif;
+}
+
+.title-chefs p{
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(33, 37, 41);
+    font-family: "Amatic SC", sans-serif;
+}
+
+
+.contaner2{
+    padding: 30px 15px;
+    margin: 30px 0 ;
+}
+
+.cards-chefs{
+    width: 100%;
+    justify-items: center;
+}
+
+
+.card{
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 25px 0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.1);
+}
+.cards-chefs .card{
+    width: 99.7%;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 50px;
+}
+.card img{
+    width: 100%;
+    position: relative;
+    
+}
+.imgcard{
+    position: relative;
+}
+.wave{
+    position: absolute;
+    display: block;
+    top: 35%;
+}
+
+
+.contentcef{
+    box-sizing: content-box;
+}
+.contentcef span{
+    color: #9999A7;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contentcef p{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: #9999A7;
+}
+.card:hover{
+    transform: scale(1.06);
+}
+
+.card:hover ul{
+    right: 10px;
+}
+
+
+.card ul{
+    list-style: none;
+    position: absolute;
+    border-radius: 5px;
+    top: 10px;
+    right: -50px;
+    background-color: #ffffff4d;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.6s 0.4s ease;
+}
+.card ul li{
+    padding: 10px 0;
+}
+
+.card ul li a i{
+    color: #858282b9;
+    padding: 5px 5px;
+}
+
+
+.siction3{
+    background-color: #EEEEEE ;
+    width: 100%;
+    
+}
+
+.contaner3{
+    padding: 60px 15px;
+    margin: 0 ;
+    
+}
+
+.gallery-photos{
+    width: 99%;
+    margin: 0;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.mealPhoto{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid white;
+    
+}
+
+.mealPhoto img{
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.mealPhoto:hover img{
+    transform: scale(1.08);
+}
+
+.leyarphoto{
+    background-color: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    transition: 0.4s;
+    transform: translate(0 , 100%);
+}
+
+.mealPhoto:hover .leyarphoto{
+    transform: translate(0 , 0);
+}
+
+.leyarphoto h2{
+    margin: 0;
+}
+
+.leyarphoto p{
+    margin: 0;
+}
+
+.siction4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contaner4{
+    width: 95%;
+    margin: 50px 0;
+    padding: 40px 0;
+}
+
+.map{
+    width: 100%;
+}
+.map iframe{
+    width: 100%;
+
+}
+
+.maptitle{
+    margin: 25px 0;
+}
+
+.title{
+    background-color: #F5F5F5;
+    flex-direction: row;
+    margin: 15px 0;
+    display: flex;
+}
+
+.title .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 25px;
+}
+.title .icon i{
+    background-color: #CE1212;
+    padding: 17px ;
+    border-radius: 50%;
+    color: white;
+}
+
+.contentmap{
+    padding: 25px 0;
+    
+}
+
+.contentmap a{
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+.contentmap p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(33, 37, 41);
+}
+.contentmap p strong{
+    padding-right: 5px;
+}
+
+.contentmap h3{
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: rgb(125, 125, 125);
+    font-weight: 700;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    box-shadow:  3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+.namemail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e8e3e3a2;
+    outline: none; 
+    transition: 0.3s;
+}
+
+.form input:focus {
+        border-color: red;      
+    }
+
+.form textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border: 2px solid #e8e3e3a2;
+      outline: none; 
+      transition: 0.3s;
+      font-size: 16px;
+    }
+
+.form textarea:focus {
+        border-color: red;      
+    }
+
+    .form button{
+        background-color: #b61515;
+        border-style: none;
+        text-align: center;
+        width: 200px;
+        padding: 20px 0;
+        color: white;
+        border-radius: 50px;
+        cursor:pointer;
+        align-self: center;
+        margin-top: 20px;
+        transition: 0.3s;
+    }
+    .form button:hover{
+        background-color: #CE1212;
+    }
+
+
+    footer{
+        background-color: rgb(231, 226, 226);
+    }
+
+    .fa-thin{
+        font-size: 20px;
+    }
+
+    footer{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+        margin: 20px 0;
+    }
+
+    .contaner5{
+        width: 95%;
+        
+    }
+
+    .footeritem{
+        width: 100%;
+    }
+
+    .footeritem div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footeritem div img{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .footeritem div h2{
+        font-size: 30px;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        margin: 0;
+    }
+
+    .footeritem p{
+        color: white;
+    }
+    .footeritem .Sh3{
+        text-align: center;
+        width: 100%;
+        border-bottom: 2px solid #e8e3e3a2;
+        padding-bottom: 10px;
+        color: white;
+        margin: 0;
+    }
+
+    .footeritem .media{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .footeritem ul li .social{
+        color: white;
+        font-size: 24px;
+    }
+
+    .footeritem .ourNew{
+        margin: 0;
+        color: white;
+    }
+
+    .footeritem h3{
+        color: white;
+    }
+
+    .formFooter{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .formFooter input,button{
+        width: 100%;
+        padding: 15px;
+        border-style: none;
+        outline: none; 
+    }
+
+    .formFooter button{
+        background-color: #d32424;
+        cursor: pointer;
+        color: white;
+    }
+
+
+
+@media screen and (min-width:768px) {
+
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 0;
+        z-index: 99;
+    }
+
+
+    .links ul{
+        display: flex;
+        
+    }
+
+    .links ul li a{
+        padding: 5px 15px;
+    }
+
+
+    .image1{
+        width: 42%;
+        order: 1;
+    }
+    .image1 img{
+        padding: 0;
+    }
+    .coption1{
+        width: 50%;
+        margin: 0;
+        text-align: start;
+        order: 0;
+    }
+
+    .btn-groub{
+        text-align: start;
+        justify-content: start;
+    }
+    .btn-groub .book{
+        border-radius: 0 25px 25px 25px ;
+        padding: 10px 25px;
+    }
+    .leyar{
+        height: 100vh;
+        justify-items: center;
+        align-content: center;
+        
+    }
+    .contaner{
+        margin: 0;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+
+
+    .cards-chefs{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .cards-chefs .card{
+        width: 32%;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .imgcard img{
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+    .wave{
+        position:absolute; 
+        right: 0;
+        left: 0;
+    }
+
+    .contentcef{
+        padding: 5px 15px;
+    }
+
+    .gallery-photos{
+        width: 70%;
+        background-color: red;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .mealPhoto{
+        width: 32%;
+        display: flex;
+        align-self: start;
+    }
+
+    .mealPhoto img{
+        overflow-clip-margin: content-box;
+    }
+
+    .Beef{
+        align-self: flex-start;
+    }
+    
+
+    .contaner4{
+        width: 70%;
+        /* padding: 40px 0;
+        margin: 50px 0; */
+    }
+
+    .maptitle{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+
+    }
+
+    .title{
+        width: 49.4%;
+        margin: 0;
+    }
+        
+}
