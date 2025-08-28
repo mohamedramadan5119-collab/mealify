@@ -1,0 +1,365 @@
+/* دي ال responsiv PC */
+@media screen and (min-width:1200px) {
+
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 0;
+        z-index: 99;
+    }
+
+
+    .links ul{
+        display: flex;
+        
+    }
+
+    .links ul li a{
+        padding: 5px 15px;
+    }
+
+
+    .image1{
+        width: 42%;
+        order: 1;
+    }
+    .image1 img{
+        padding: 0;
+    }
+    .coption1{
+        width: 50%;
+        margin: 0;
+        text-align: start;
+        order: 0;
+    }
+
+    .btn-groub{
+        text-align: start;
+        justify-content: start;
+    }
+    .btn-groub .book{
+        border-radius: 0 25px 25px 25px ;
+        padding: 10px 25px;
+    }
+    .leyar{
+        height: 100vh;
+        justify-items: center;
+        align-content: center;
+        
+    }
+    .contaner{
+        margin: 0;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+
+
+    .cards-chefs{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .cards-chefs .card{
+        width: 32%;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .imgcard img{
+        position: relative;
+        overflow: hidden;
+        display: block;
+    }
+    .wave{
+        position:absolute; 
+        right: 0;
+        left: 0;
+    }
+
+    .contentcef{
+        padding: 5px 15px;
+    }
+
+    .gallery-photos{
+        width: 70%;
+        
+        
+        height: 1165px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+    .Levitation-pizza{
+        order: 1;
+    }
+
+    .steaks{
+        order: 2;
+    }
+
+    .Frittata{
+        order: 3;
+    }
+
+    .Burger{
+        order: 4;
+    }
+
+    .kebab{
+        order: 6;
+    }
+
+    .Crispy{
+        order: 5;
+    }
+
+    .mealPhoto{
+        width: 32%;
+        display: flex;
+        align-self: start;
+        object-fit: cover;
+    }
+
+
+
+
+    
+
+    .contaner4{
+        width: 70%;
+    }
+
+    .maptitle{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+
+    }
+
+    .title{
+        width: 49.4%;
+        margin: 0;
+    }
+
+    .contaner5{
+        width: 70%;
+        display: flex;
+        gap: 20px;
+    }
+    .footeritem{
+        width: 24%;
+    }
+
+    .contaner5 .mid{
+        width: 49%;
+    }
+
+    .formFooter{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .formFooter input{
+        width: 75%;
+    }
+
+    .formFooter button{
+        width: 24%;
+    }
+        
+}
+
+
+/* ودي ال responsive ipad */
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 0;
+        z-index: 99;
+    }
+
+
+    .links ul{
+        display: flex;
+        
+    }
+
+    .links ul li a{
+        padding: 5px 15px;
+    }
+
+    .leyar{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contaner{
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .image1{
+        width: 100%;
+        
+    }
+
+    .coption1{
+        width: 100%;
+    }
+
+
+    /* السكشن الثانى */
+
+
+    .siction2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contaner2{
+        width: 90%;
+    }
+
+    .cards-chefs{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .cards-chefs .card{
+        width: 48%;
+    }
+
+
+    /* السكشن الثالث */
+    
+
+    .siction3{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contaner3{
+        width: 90%;
+    }
+
+    .gallery-photos{
+        width: 90%;
+        
+        
+        height: 1405px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    .mealPhoto{
+        width: 50%;
+        display: flex;
+        align-self: start;
+        object-fit: cover;
+    }
+
+
+
+    .steaks{
+        order:1 ;
+    }
+
+
+
+    .kebab{
+        order: 3;
+    }
+
+    .Crispy{
+        order:2;
+    }
+
+
+    .contaner4{
+        width: 90%;
+    }
+
+    .maptitle{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        
+        gap: 15px;
+    }
+
+    .title{
+        width: 48.9%;
+        margin: 0;
+    }
+
+
+    /* footer */
+
+    .contaner5{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footeritem{
+        width: 48.9%;
+
+    }
+    .two{
+        order:1 ;
+    }
+
+    .mid{
+        width: 100%;
+        order:2 ;
+
+    }
+
+    .QuickLinks{
+        width: 100%;
+    }
+    .QuickLinks ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}   
