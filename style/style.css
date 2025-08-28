@@ -203,6 +203,8 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    color: rgb(33, 37, 41);
+    font-size: 16px;
 }
 
 
@@ -759,4 +761,5 @@ body{
     .last-icon:hover{
         cursor: pointer;
     }
+
 
