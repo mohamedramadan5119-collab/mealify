@@ -37,8 +37,12 @@ body{
 .navbar{
     background-color: white;
     box-shadow:  3px 3px 15px rgba(0, 0, 0, 0.1);
+    
 }
 
+.logo h1{
+    margin: 0;
+}
 
 .logo h1 a{
     font-size: 30px;
@@ -217,7 +221,6 @@ body{
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
-    color: #212529 ;
     transition: 0.5s;
     border-radius: 50%; 
     position: relative;
@@ -761,5 +764,4 @@ body{
     .last-icon:hover{
         cursor: pointer;
     }
-
 
