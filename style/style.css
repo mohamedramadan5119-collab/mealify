@@ -8,6 +8,10 @@ body{
 
     
 }
+
+html {
+  scroll-behavior: smooth;
+}
 *{
     box-sizing: border-box;
     
@@ -764,4 +768,5 @@ body{
     .last-icon:hover{
         cursor: pointer;
     }
+
 
