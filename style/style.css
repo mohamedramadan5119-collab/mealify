@@ -3,13 +3,27 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+
+    
+
+    
 }
 *{
     box-sizing: border-box;
     
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #fff;
+    box-shadow: 0px 0px 21px 0px #0003 inset;
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
+    border-radius: 20px;
+}
 
 
 .leyar{
@@ -34,6 +48,20 @@ body{
     margin: 0;
     color: #111;
 }
+.mealify{
+    position: relative;
+}
+
+.mealify::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    top: 33px;
+    left: 90%;
+}
 
 .links ul{
     list-style: none;
@@ -56,7 +84,10 @@ body{
     text-decoration: none;
     color: #111;
     font: 600 20px;
+    
 }
+
+
 
 
 
@@ -86,14 +117,40 @@ body{
     color: #111;
 }
 
+.leyar{
+        width: 100%;
+        height: 100vh;
+    }
+
+
+
+@keyframes shake{
+  0%{ transform: translate(0 ,2px); }
+  15%{ transform: translate(1px); }
+  30%{ transform: translate(-2px); }
+  45%{ transform: translate(2px);
+        transform: rotate(1deg);
+     }
+  60%{ transform: translate(-2px); }
+  75%{ transform: translate(-1px, 2px);
+        transform: rotate(-1deg);
+    }
+  100%{ transform: translate(2); }
+}
 
 .image1{
     width: 100%;
+  
+}
+
+.image1 img:hover{
+    animation: shake 0.4s infinite;
 }
 
 .image1 img{
     width: 100%;
     padding: 50px 20px;
+    filter: drop-shadow(5px 5px 10px );
 }
 
 .coption1{
@@ -111,6 +168,7 @@ body{
     font-size: 16px;
     font-weight: 400;
     color: rgb(79, 79, 90);
+    line-height: 30px ;
 }
 
 .btn-groub{
@@ -141,27 +199,52 @@ body{
 
 .btn-groub .icon{
     padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.fa-play{
-    background-color: white;
+
+
+#id{
+    background-color: rgb(248, 247, 247);
     width: 30px;
     height: 30px;
+    display: flex;
     justify-content: center;
-    align-content: center;
-    border-radius: 50%;
+    align-items: center;
+    padding: 5px 10px;
     color: #212529 ;
-    border-left: 10px solid red;
     transition: 0.5s;
+    border-radius: 50%; 
+    position: relative;
 
 }
+
+
+#id::before {
+      content: "";
+      position: absolute;
+      inset: -10px;             
+      border-radius: 50%;
+      border: 8px solid #CF1212;    
+      border-bottom-color: transparent; 
+      border-right-color: transparent ;
+      transform: rotate(-45deg);
+    }
+
+#idicon{
+    position: relative;
+    left: -20px;
+
+}    
+
 
 .icon{
     transition: 0.5s;
 }
-.fa-play:hover{
-    color: rgb(228, 8, 8);
-}
+
 
 .icon:hover {
     color: rgb(228, 8, 8);
@@ -229,6 +312,7 @@ body{
 }
 .wave{
     position: absolute;
+    width: 100%;
     display: block;
     top: 35%;
 }
@@ -336,6 +420,7 @@ body{
     color: white;
     transition: 0.4s;
     transform: translate(0 , 100%);
+    padding: 20px;
 }
 
 .mealPhoto:hover .leyarphoto{
@@ -364,9 +449,11 @@ body{
 
 .map{
     width: 100%;
+    height: 400px;
 }
 .map iframe{
     width: 100%;
+    height: 100%;
 
 }
 
@@ -456,6 +543,8 @@ body{
       outline: none; 
       transition: 0.3s;
       font-size: 16px;
+      resize: both;
+  overflow: auto;
     }
 
 .form textarea:focus {
@@ -493,7 +582,8 @@ body{
         display: flex;
         justify-content: center;
         padding: 40px 0;
-        margin: 20px 0;
+        margin:0;
+        background-image: url(../image/low-poly-grid-haikei.svg);
     }
 
     .contaner5{
@@ -525,16 +615,27 @@ body{
         margin: 0;
     }
 
+    .mid h3{
+        color: white;
+    }
+    .mid p{
+        line-height: 25px;
+        color: white;
+    }
+
     .footeritem p{
+        line-height: 25px;
         color: white;
     }
     .footeritem .Sh3{
         text-align: center;
         width: 100%;
-        border-bottom: 2px solid #e8e3e3a2;
+        border-bottom: 2px solid #9999A7;
         padding-bottom: 10px;
         color: white;
         margin: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .footeritem .media{
@@ -550,7 +651,7 @@ body{
         font-size: 24px;
     }
 
-    .footeritem .ourNew{
+    .mid .ourNew{
         margin: 0;
         color: white;
     }
@@ -568,7 +669,7 @@ body{
 
     .formFooter input,button{
         width: 100%;
-        padding: 15px;
+        padding: 12px;
         border-style: none;
         outline: none; 
     }
@@ -579,141 +680,83 @@ body{
         color: white;
     }
 
-
-
-@media screen and (min-width:768px) {
-
-    .navbar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
+    .QuickLinks{
+        flex-direction: column;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5px 0;
-        z-index: 99;
+        justify-self: start;
     }
 
-
-    .links ul{
+    .QuickLinks ul{
         display: flex;
-        
-    }
-
-    .links ul li a{
-        padding: 5px 15px;
-    }
-
-
-    .image1{
-        width: 42%;
-        order: 1;
-    }
-    .image1 img{
-        padding: 0;
-    }
-    .coption1{
-        width: 50%;
-        margin: 0;
-        text-align: start;
-        order: 0;
-    }
-
-    .btn-groub{
-        text-align: start;
-        justify-content: start;
-    }
-    .btn-groub .book{
-        border-radius: 0 25px 25px 25px ;
-        padding: 10px 25px;
-    }
-    .leyar{
-        height: 100vh;
-        justify-items: center;
-        align-content: center;
-        
-    }
-    .contaner{
-        margin: 0;
-        width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
-    }
-
-
-    .cards-chefs{
-        display: flex;
-        width: 70%;
-        margin: auto;
-        justify-content: space-between;
-    }
-
-    .cards-chefs .card{
-        width: 32%;
-        position: relative;
-        overflow: hidden;
-    }
-
-
-    .imgcard img{
-        position: relative;
-        overflow: hidden;
-        display: block;
-    }
-    .wave{
-        position:absolute; 
-        right: 0;
-        left: 0;
-    }
-
-    .contentcef{
-        padding: 5px 15px;
-    }
-
-    .gallery-photos{
-        width: 70%;
-        background-color: red;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .mealPhoto{
-        width: 32%;
-        display: flex;
-        align-self: start;
-    }
-
-    .mealPhoto img{
-        overflow-clip-margin: content-box;
-    }
-
-    .Beef{
-        align-self: flex-start;
-    }
-    
-
-    .contaner4{
-        width: 70%;
-        /* padding: 40px 0;
-        margin: 50px 0; */
-    }
-
-    .maptitle{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-
-    }
-
-    .title{
-        width: 49.4%;
+        list-style: none;
+        padding: 0;
         margin: 0;
     }
-        
-}
+    .QuickLinks h3{
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .QuickLinks ul li{
+        width: 50%;
+        transition: 0.5s;
+    }
+
+    .QuickLinks ul li a{
+        text-decoration: none;
+        color: white;
+        justify-self: start;
+    }
+
+    .QuickLinks ul li i{
+        color: white;
+        padding: 6px;
+    }
+
+    .QuickLinks ul li:hover{
+        transform: translate(15px);
+        background-color: #222222;
+    }
+
+    .get{
+        display: flex;
+        flex-direction: column;
+        justify-self: start;
+    }
+
+    .get h3{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .get ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .get ul li{
+        padding: 10px 0;
+    }
+
+    .get ul li span{
+        color: white;
+
+    }
+    .get ul li i{
+        padding: 10px;
+        font-size: 25px;
+        color:#CE1212;
+    }
+    .get ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    .last-icon:hover{
+        cursor: pointer;
+    }
+
